@@ -3,7 +3,20 @@ body {
 }
 
 img {
-    margin: 0;
-    padding: 0;
     max-width: 100%;
+    vertical-align: top;
+    /* display: none; */
+}
+
+img#responsive {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    img#responsive {
+        display: block;
+    }
+    img {
+        display: none;
+    }
 }
